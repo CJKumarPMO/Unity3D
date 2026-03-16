@@ -1,0 +1,17 @@
+{
+  "name": "elearning",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "services/*",
+    "frontend"
+  ],
+  "scripts": {
+    "dev": "docker-compose up --build",
+    "build": "docker-compose build",
+    "test": "npm test --workspaces"
+  },
+  "devDependencies": {
+    "prettier": "^3.0.0"
+  }
+}
